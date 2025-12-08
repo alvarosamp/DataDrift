@@ -1,0 +1,15 @@
+{"timestamp":"2025-12-08T15:38:35.433225","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-12-08T15:38:35.435021","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/drift_retraining_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-08T15:38:37.073735Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.076000Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.077016Z","level":"info","event":"Current task name:decide_retrain_branch","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.077966Z","level":"info","event":"Dag name:data_model_drift_detection_and_retraining","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.078796Z","level":"info","event":"Drift detection output:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.080136Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.081069Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:37.081986Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): decide_retrain_branch>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:38:35.595915","level":"info","event":"Done. Returned value was: no_retrain","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:38:35.596262","level":"info","event":"Branch into no_retrain","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:38:35.597511","level":"info","event":"Following branch {'no_retrain'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:38:35.599217","level":"info","event":"Skipping tasks [('retrain_model', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:38:35.600113","level":"info","event":"Skipping downstream tasks.","logger":"task"}

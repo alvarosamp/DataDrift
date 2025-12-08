@@ -1,0 +1,15 @@
+{"timestamp":"2025-12-08T15:35:01.935469","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-12-08T15:35:01.936517","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/drift_retraining_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-08T15:35:01.994407Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:01.996122Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:01.997095Z","level":"info","event":"Current task name:decide_retrain_branch","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:01.997664Z","level":"info","event":"Dag name:data_model_drift_detection_and_retraining","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:02.016702Z","level":"info","event":"Drift detection output:","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:02.016707","level":"info","event":"Done. Returned value was: no_retrain","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:35:02.016864","level":"info","event":"Branch into no_retrain","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:35:02.017392","level":"info","event":"Following branch {'no_retrain'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:35:02.018080","level":"info","event":"Skipping tasks [('retrain_model', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator"}
+{"timestamp":"2025-12-08T15:35:02.018610","level":"info","event":"Skipping downstream tasks.","logger":"task"}
+{"timestamp":"2025-12-08T15:35:02.090305Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:02.090899Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:02.091340Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): decide_retrain_branch>","chan":"stdout","logger":"task"}

@@ -1,0 +1,11 @@
+{"timestamp":"2025-12-08T15:35:03.007261","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-12-08T15:35:03.007789","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/drift_retraining_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-08T15:35:03.074982Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.076365Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.080811Z","level":"info","event":"Current task name:no_retrain","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.081323Z","level":"info","event":"Dag name:data_model_drift_detection_and_retraining","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.081620Z","level":"info","event":"Skipping model retraining as no drift was detected.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.081880Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.082101Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.082344Z","level":"info","event":"Task operator:<Task(PythonOperator): no_retrain>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-12-08T15:35:03.031829","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
