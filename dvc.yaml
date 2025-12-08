@@ -1,0 +1,25 @@
+stages:
+  prepare:
+    cmd: python data/prepare_data.py
+    deps:
+      - data/prepare_data.py
+    outs:
+      - data/iris.csv
+
+  drift:
+    cmd: python drift_detection/generate_drifted_data.py --in data/iris.csv --out data/iris_drifted.csv
+    deps:
+      - drift_detection/generate_drifted_data.py
+      - data/iris.csv
+    outs:
+      - data/iris_drifted.csv
+
+  train:
+    cmd: python models/train_models.py --data data/iris.csv --model models/random_forest.pkl --metrics metrics.json
+    deps:
+      - models/train_models.py
+      - data/iris.csv
+    outs:
+      - models/random_forest.pkl
+    metrics:
+      - metrics.json
